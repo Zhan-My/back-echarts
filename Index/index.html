@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+
+    <!-- Plugin-CSS -->
+    <link href="../plugin/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../plugin/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body>
+    <main class="exhibitor-container row">
+        <header class="header">
+            <img src="http://www.saecce.org.cn/themes/basic/skin/images/logo002.png" alt="">
+        </header>
+
+        <section class="nav-part col-lg-1">
+            <p style="text-align: right;" class="mx-1 my-3">
+                <i class="fa fa-align-justify" open="true" aria-hidden="true" style="cursor: pointer;"></i>
+            </p>
+
+            <ul class="nav flex-column" id="navbarContent">
+                <li class="nav-item">
+                    <a class="nav-link link-active link-after" href="menu/formData.html" target="mainFrame"><i
+                            class="fa fa-home fa-active" aria-hidden="true"></i><span>数据报表</span> </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="menu/manual.html" target="mainFrame"><i class="fa fa-book"
+                            aria-hidden="true"></i><span>展商手册</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="menu/order.html" target="mainFrame"><i class="fa fa-list"
+                            aria-hidden="true"></i><span>订单</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#dropMenu" role="button" data-toggle="collapse" aria-expanded="false"
+                        aria-controls="dropMenu" id="subLink">
+                        <i class="fa fa-cloud-upload" aria-hidden="true"></i><span>展台资料提交</span><i class="fa fa-angle-left"
+                            aria-hidden="true"></i>
+                    </a>
+                    <section class="collapse" id="dropMenu">
+                        <a class="nav-link" href="menu/subInfo/upload.html" target="mainFrame">设计上传</a>
+                        <a class="nav-link" href="menu/subInfo/certificate.html" target="mainFrame">电工证</a>
+                        <a class="nav-link" href="menu/subInfo/data.html" target="mainFrame">资料上传</a>
+                        <a class="nav-link" href="menu/subInfo/speTab.html" target="mainFrame">特殊表格</a>
+                    </section>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="menu/bills.html" target="mainFrame"><i class="fa fa-money"
+                            aria-hidden="true"></i><span>应付账单</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="menu/refund.html" target="mainFrame"><i class="fa  fa-rmb"
+                            aria-hidden="true"></i><span>退款</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="menu/notice.html" target="mainFrame"><i class="fa fa-bullhorn"
+                            aria-hidden="true"></i><span>公告栏</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="menu/help.html" target="mainFrame"><i class="fa fa-question-circle"
+                            aria-hidden="true"></i><span>帮助</span></a>
+                </li>
+
+                <p class="now-date"></p>
+            </ul>
+
+        </section>
+
+        <section class="frame-part col-lg-11 embed-responsive">
+            <iframe name="mainFrame" src="mainFrame.html" frameborder="0" id="mainIframe"></iframe>
+        </section>
+    </main>
+
+
+    <!-- Plugin-JS -->
+    <script src="../plugin/js/jquery.min.js"></script>
+    <script src="../plugin/js/popper.min.js"></script>
+    <script src="../plugin/bootstrap/js/bootstrap.min.js"></script>
+
+
+    <script src="../js/index.js"></script>
+</body>
+
+</html>

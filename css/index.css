@@ -1,0 +1,138 @@
+body,
+html,
+.exhibitor-container {
+    height: 100%;
+    overflow: hidden;
+}
+
+.row {
+    margin: 0;
+}
+
+.header {
+    height: 50px;
+    width: 100%;
+    display: block;
+    background: #c6c8c9;
+    overflow: hidden;
+}
+
+.header img {
+    display: block;
+    width: 7%;
+}
+
+/* ------ 菜单控制 ------- */
+.nav-part,
+.frame-part {
+    padding: 0;
+    height: calc(100% - 50px);
+}
+
+.nav-part {
+    transition: all .2s ease;
+}
+
+.nav-part .nav {
+    height: 100%;
+}
+
+.nav-hide {
+    max-width: 2.5% !important;
+    transition: all .2s ease;
+}
+
+.toggler-hide {
+    display: block;
+    margin: 20% auto !important;
+}
+
+.nav-part,
+.nav,
+#dropMenu {
+    background: #364150;
+}
+
+
+/* ------ 菜单内容 ------- */
+#dropMenu {
+    padding-left: 8%;
+}
+
+.nav-item {
+    border-bottom: 1px solid #5c5c5c;
+    width: 100%;
+}
+
+.nav-link {
+    color: #fff;
+    font-size: 14px;
+    padding-left: 14px;
+}
+
+.nav-link:hover {
+    color: #fff;
+    background: #2a2a2a;
+}
+
+.link-active {
+    background: #e02222 !important;
+}
+
+.fa {
+    color: #aaa;
+    width: 18px;
+    height: 18px;
+    margin-right: 3px;
+    text-align: center;
+}
+
+.fa-active {
+    color: #fff;
+}
+
+.nav-item,
+.nav-item>.nav-link,
+#dropMenu>.nav-link {
+    position: relative;
+}
+
+.link-after::after {
+    z-index: 100;
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right: 8px solid #f6f5f1;
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+
+.fa-angle-left {
+    position: absolute;
+    right: 0;
+    margin-right: 0;
+    top: 12px;
+    transition: all .3s ease;
+}
+
+.arrow-toggle {
+    position: absolute;
+    transform: rotate(-90deg);
+    transform-origin: 6px 9px;
+    transition: all .3s ease;
+}
+
+/* 时间 */
+.now-date {
+    width: 100%;
+    border-top: 2px solid #f6f5f1;
+    margin-top: 260%;
+    text-align: center;
+    color: #fff;
+    padding-top: 5%;
+    line-height: 1.2;
+}

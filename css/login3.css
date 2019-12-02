@@ -1,0 +1,80 @@
+body,
+html,
+.login-container {
+    height: 100%;
+}
+
+.login-container {
+    position: relative;
+}
+
+.row {
+    margin: 0;
+}
+
+.login-container>div:first-child {
+    position: relative;
+    padding: 0;
+}
+
+.login-container>div:first-child::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 100%;
+    background: rgba(111, 111, 111, .5);
+}
+
+.login-container>div:first-child img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.card {
+    position: relative;
+    height: 100%;
+    padding: 0;
+    text-align: center;
+}
+
+.card .card-body {
+    margin-top: 40%;
+}
+
+.card .card-title {
+    font-size: 32px;
+    color: #555;
+}
+
+.card .card-title,
+.card .input-group {
+    margin-bottom: 8%;
+}
+
+.card .input-group-text {
+    background: none;
+}
+
+.btn,
+.btn:hover {
+    background: #454d55;
+    border: #000;
+}
+
+@media screen and (max-width: 992px) {
+    .login-container>div:first-child {
+        display: none;
+    }
+
+    .card .card-title {
+        font-size: 30px;
+    }
+
+    .card .card-title,
+    .card .input-group {
+        margin-bottom: 10%;
+    }
+}

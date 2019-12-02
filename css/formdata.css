@@ -1,0 +1,107 @@
+ul {
+    padding-inline-start: 0;
+}
+
+/* ------ card-list ------ */
+.card-list .card {
+    transition: all .5s ease;
+    width: 12%;
+    background: #fff;
+    box-shadow: 0 0 3px #ccc;
+}
+
+.card-list .card:hover {
+    transition: all .5s ease;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+}
+
+.card-list .card-body {
+    padding: 0;
+    padding-top: 1rem;
+    line-height: .6;
+}
+
+.card-list .card-title {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+}
+
+.card-list .card-text {
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.chart-list li {
+    transition: all .5s ease;
+    list-style: none;
+    background: #fff;
+    box-shadow: 0 0 3px #ccc;
+    border-radius: .3rem;
+}
+
+.chart-list li:hover {
+    transition: all .5s ease;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .5);
+}
+
+/* ------ dataTable ------ */
+#dataTable_wrapper {
+    transition: all .5s ease;
+    font-size: 14px;
+    background: #fff;
+    border-radius: .3rem;
+    padding: 1%;
+}
+
+#dataTable_wrapper:hover {
+    transition: all .5s ease;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .5);
+}
+
+.edit-btn,
+.del-btn,
+.send-btn {
+    border: none;
+    color: #fff;
+    border-radius: 3px;
+    margin-bottom: 3%;
+    padding: 1% 6%;
+}
+
+.edit-btn {
+    background: #ff793f;
+}
+
+.del-btn {
+    background: #ff5252;
+}
+
+.send-btn {
+    background: #27ae60;
+}
+
+
+/* ------ Modal ------ */
+.input-group-text {
+    border: none;
+    background: none;
+}
+
+.modal-body {
+    font-size: 36px;
+    font-weight: bold;
+    color: #555;
+    text-align: center;
+}
+
+.modal-footer {
+    border-top: none;
+    justify-content: center;
+}
+
+.modal-footer .btn-primary {
+    border-color: #3398DB;
+    background: #3398DB;
+}

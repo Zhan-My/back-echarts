@@ -91,3 +91,47 @@ $(function () {
         }
     }
 })
+/* $(function () {
+            // 日期倒计时控件
+            setTimeout(() => {
+                let now = new Date()
+
+                const leftTime = new Date($('p').attr('data-time').replace(/\-/g, '/')) - now;
+                if (leftTime >= 0) {
+                    const d = full(Math.floor(leftTime / 1000 / 60 / 60 / 24));
+                    const h = full(Math.floor(leftTime / 1000 / 60 / 60 % 24));
+                    const m = full(Math.floor(leftTime / 1000 / 60 % 60));
+                    const s = full(Math.floor(leftTime / 1000 % 60));
+
+                    $(".left-time").html(`剩余${d > 0 ? d + '天' : '' + ' '} ${h + '时' + ' '} ${m + '分' + ' '} ${s + '秒'}`)
+                }
+
+            }, 0);
+
+            var timer
+            startTimer()
+
+            function startTimer() {
+                timer = setInterval(() => {
+                    let now = new Date()
+
+                    const leftTime = new Date($('p').attr('data-time').replace(/\-/g, '/')) - now;
+                    if (leftTime >= 0) {
+                        const d = full(Math.floor(leftTime / 1000 / 60 / 60 / 24));
+                        const h = full(Math.floor(leftTime / 1000 / 60 / 60 % 24));
+                        const m = full(Math.floor(leftTime / 1000 / 60 % 60));
+                        const s = full(Math.floor(leftTime / 1000 % 60));
+
+                        $(".left-time").html(`剩余${d > 0 ? d + '天' : '' + ' '} ${h + '时' + ' '} ${m + '分' + ' '} ${s + '秒'}`)
+                    }
+                }, 1000)
+            }
+
+            function full(str) {
+                if (str < 10) {
+                    return '0' + str
+                } else {
+                    return str
+                }
+            }
+        }) */

@@ -92,7 +92,7 @@ $(function () {
     }
 })
 /* $(function () {
-            // 日期倒计时控件
+            // 日期倒计时
             setTimeout(() => {
                 let now = new Date()
 
@@ -104,6 +104,9 @@ $(function () {
                     const s = full(Math.floor(leftTime / 1000 % 60));
 
                     $(".left-time").html(`剩余${d > 0 ? d + '天' : '' + ' '} ${h + '时' + ' '} ${m + '分' + ' '} ${s + '秒'}`)
+
+                } else {
+                    $(".left-time").html(`精彩进行中`)
                 }
 
             }, 0);
@@ -123,6 +126,8 @@ $(function () {
                         const s = full(Math.floor(leftTime / 1000 % 60));
 
                         $(".left-time").html(`剩余${d > 0 ? d + '天' : '' + ' '} ${h + '时' + ' '} ${m + '分' + ' '} ${s + '秒'}`)
+                    } else {
+                        $(".left-time").html(`精彩进行中`)
                     }
                 }, 1000)
             }
